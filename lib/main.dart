@@ -38,9 +38,15 @@ class _MyHomePageState extends State<MyHomePage> {
           // the App.build method, and use it to set our appbar title.
           title: Text("Buttons"),
         ),
-        body: TextButton(
-          child: Text("click here"),
-          onPressed: () {},
+        body: Row(
+          children: [
+            TextButton(
+              child: Text("click here"),
+              onPressed: () {},
+            ),
+            ElevatedButton(onPressed: (() {}), child: Text("elevated button")),
+            OutlinedButton(onPressed: () {}, child: Text("outlined button"))
+          ],
         ));
   }
 }

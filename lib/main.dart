@@ -38,26 +38,78 @@ class _MyHomePageState extends State<MyHomePage> {
           // the App.build method, and use it to set our appbar title.
           title: Text("Buttons"),
         ),
-        body: Row(
-          children: [
-            TextButton(
-              child: Text("click here"),
-              onPressed: () {},
-            ),
-            ElevatedButton(onPressed: (() {}), child: Text("elevated button")),
-            OutlinedButton(onPressed: () {}, child: Text("outlined button")),
-            InkWell(
-              onTap: () {
-                print("tapped");
-              },
-              child: Container(
+        body: SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: [
+              TextButton(
+                child: Text("click here"),
+                onPressed: () {},
+              ),
+              ElevatedButton(
+                  onPressed: (() {}), child: Text("elevated button")),
+              OutlinedButton(onPressed: () {}, child: Text("outlined button")),
+              InkWell(
+                onTap: () {
+                  print("tapped");
+                },
+                child: Container(
+                  width: 100,
+                  height: 30,
+                  color: Colors.pinkAccent,
+                  child: Center(child: Text("click here")),
+                ),
+              ),
+              Container(
                 width: 100,
                 height: 30,
                 color: Colors.pinkAccent,
                 child: Center(child: Text("click here")),
               ),
-            )
-          ],
+              Container(
+                width: 100,
+                height: 30,
+                color: Colors.black,
+                child: Center(child: Text("click here")),
+              ),
+              Container(
+                width: 100,
+                height: 30,
+                color: Colors.amberAccent,
+                child: Center(child: Text("click here")),
+              ),
+              Container(
+                width: 100,
+                height: 30,
+                color: Colors.blueGrey,
+                child: Center(child: Text("click here")),
+              ),
+              Container(
+                width: 100,
+                height: 30,
+                color: Colors.orangeAccent,
+                child: Center(child: Text("click here")),
+              ),
+              Container(
+                width: 100,
+                height: 30,
+                color: Colors.red,
+                child: Center(child: Text("click here")),
+              ),
+              Container(
+                width: 100,
+                height: 30,
+                color: Colors.orangeAccent,
+                child: Center(child: Text("click here")),
+              ),
+              Container(
+                width: 100,
+                height: 30,
+                color: Colors.red,
+                child: Center(child: Text("click here")),
+              ),
+            ],
+          ),
         ));
   }
 }

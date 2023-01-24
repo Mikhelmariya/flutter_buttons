@@ -45,7 +45,18 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed: () {},
             ),
             ElevatedButton(onPressed: (() {}), child: Text("elevated button")),
-            OutlinedButton(onPressed: () {}, child: Text("outlined button"))
+            OutlinedButton(onPressed: () {}, child: Text("outlined button")),
+            InkWell(
+              onTap: () {
+                print("tapped");
+              },
+              child: Container(
+                width: 100,
+                height: 30,
+                color: Colors.pinkAccent,
+                child: Center(child: Text("click here")),
+              ),
+            )
           ],
         ));
   }
